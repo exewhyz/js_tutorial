@@ -413,3 +413,56 @@
 // object2.name.firstName = "John"; //new field of object2
 // console.log("OBJECT1: " + JSON.stringify(object1));
 // console.log("OBJECT2: " + JSON.stringify(object2));
+
+//DOM
+// const div = document.createElement("div");
+
+// div.innerText = "Hello World";
+
+// div.classList.add("test");
+// div.classList.remove("test");
+
+// document.body.appendChild(div);
+
+// const fd = document.getElementById("first-div");
+
+// fd.addEventListener("click", function () {
+//     fd.style.backgroundColor = "red";
+// })
+
+// fd.style.backgroundColor = "red";
+
+// task1- 2 minutes
+// task2- 3 minutes
+// task3- 4 minutes
+// task4- 5 minutes
+
+// console.log("first")
+// console.log("second")
+// console.log("third")
+// console.log("fourth")
+
+// const timeoutId = setTimeout(() => {
+//   console.log("Inside setTimeout ran after 3 second ");
+// }, 3 * 1000);
+
+// const intervalId = setInterval(() => {
+//     console.log("Inside setInterval running every 2 seconds");
+// }, 2 * 1000);
+
+// clearTimeout(timeoutId);
+// clearInterval(intervalId);
+
+// setTimeout(() => {
+//   console.log("first timeout");
+// }, 2000);
+
+// setTimeout(() => {
+//   console.log("second timeout");
+// }, 0);
+
+// console.log("something 1");
+
+// console.log("something 2");
+
+// https://github.com/exewhyz/js_tutorial.git
