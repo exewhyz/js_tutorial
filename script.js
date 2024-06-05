@@ -347,6 +347,7 @@
 
 // console.log(reducedArray);
 
+//Object in detail
 // const obj1 = {};
 
 // obj1.name = "Aniket";
@@ -363,9 +364,10 @@
 
 // console.log(obj2.name);
 
+//Value (Primitive Data types) vs Reference (Non Primitive Data types)
 // let a = 10;
 
-// let b =a;
+// let b = a; // value Copy
 
 // console.log("A: " + a);
 
@@ -377,34 +379,37 @@
 
 // console.log("NEW B: " + b);
 
-let array1 = [1, 2, 3];
+//Shallow Clone vs Deep Clone
+// let array1 = [1, 2, 3];
 
-let object1 = {
-  name: {
-    firstName: "Aniket",
-    lastNAme: "Raj",
-  },
-  phone: 1234,
-};
+// let array2 = array1; //Reference Copy
 
-// let array2 = array1;
+// let array2 = [...array1]; //1st method -> Value Copy
+// let array2 = array1.slice(0); //2nd method -> Value Copy
 
-// let array2 = [...array1]; //1st method
-// let array2 = array1.slice(0); //2nd method
-
-// let object2 = {name : {...object1.name} , ...object1}; //1st method
-// let object2 = Object.assign({}, object1); //2nd method
-
-let object2 = JSON.parse(JSON.stringify(object1));
+// array2.push(4);
 
 // console.log("ARRAY1: " + array1);
 // console.log("ARRAY2: " + array2);
-console.log("OBJECT1: " + JSON.stringify(object1));
-console.log("OBJECT2: " + JSON.stringify(object2));
 
-// array2.push(4OBJECT
-// object2.phone = 676987;
-object2.name.firstName = "John";
+// let object1 = {
+//   name: {
+//     firstName: "Aniket",
+//     lastNAme: "Raj",
+//   },
+//   phone: 1234,
+// };
 
-console.log("NEW OBJECT1: " + JSON.stringify(object1));
-console.log("NEW OBJECT2: " + JSON.stringify(object2));
+// let object2 = {...object1}; //1st method -> Shallow cloning
+// let object2 = Object.assign({}, object1); //2nd method
+
+// let object2 = {name : {...object1.name} , ...object1}; //1st method -> Deep cloning
+// let object2 = JSON.parse(JSON.stringify(object1)); //2nd method -> Deep cloning
+
+// console.log("NEW OBJECT1: " + JSON.stringify(object1));
+// console.log("NEW OBJECT2: " + JSON.stringify(object2));
+
+// object2.phone = 676987; //main field of object2
+// object2.name.firstName = "John"; //new field of object2
+// console.log("OBJECT1: " + JSON.stringify(object1));
+// console.log("OBJECT2: " + JSON.stringify(object2));
